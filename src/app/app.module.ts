@@ -6,11 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { StreamingMedia } from '@ionic-native/streaming-media';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { SafePipe } from '../pipes/safe/safe';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    SafePipe
   ],
   imports: [
     BrowserModule,

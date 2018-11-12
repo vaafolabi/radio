@@ -8,12 +8,12 @@ import { StreamingMedia, StreamingVideoOptions, StreamingAudioOptions } from '@i
 })
 export class HomePage {
 
-
+url:any = null;
 
 constructor(public navCtrl: NavController,private streamingMedia: StreamingMedia) { }
 
 startStreaming(){
-  let options: StreamingVideoOptions = {
+  /*let options: StreamingVideoOptions = {
     successCallback: () => { console.log('Video played') },
     errorCallback: (e) => { console.log('Error streaming') },
     orientation: 'landscape',
@@ -21,7 +21,8 @@ startStreaming(){
     controls: false
   };
 
-  this.streamingMedia.playVideo('197.210.168.147:8001/stream1', options);
+  this.streamingMedia.playVideo('197.210.168.147:8001/stream1', options);*/
+  this.url = 'http://197.210.168.147:8001/stream1';
 }
 
 startVideo() {
